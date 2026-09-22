@@ -1,0 +1,438 @@
+/* =========================================
+   GLOBETROTTER HOMEPAGE
+   COLORS: BLACK + BLUE + WHITE
+   ========================================= */
+
+:root {
+  --blue: #0b3d82;
+  --dark-blue: #172033;
+  --light-blue: #edf4fc;
+  --white: #ffffff;
+  --light-bg: #f5f8fc;
+  --border: #dce5ee;
+  --gray: #687386;
+}
+
+
+/* =========================================
+   GENERAL PAGE
+   ========================================= */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--white);
+  color: var(--dark-blue);
+}
+
+
+/* =========================================
+   NAVBAR
+   ========================================= */
+
+nav {
+  background-color: var(--white) !important;
+  border-bottom: 1px solid var(--border) !important;
+}
+
+nav div:first-child {
+  color: var(--blue) !important;
+}
+
+nav div:first-child:hover {
+  color: var(--dark-blue) !important;
+}
+
+nav a {
+  color: var(--dark-blue) !important;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: var(--blue) !important;
+}
+
+
+/* LOGIN BUTTON */
+
+nav button {
+  background-color: var(--blue) !important;
+  color: var(--white) !important;
+  border: none !important;
+  transition: 0.3s;
+}
+
+nav button:hover {
+  background-color: var(--dark-blue) !important;
+  transform: translateY(-2px);
+}
+
+
+/* =========================================
+   HERO SECTION
+   ========================================= */
+
+#home {
+  background: linear-gradient(
+    135deg,
+    var(--light-blue),
+    var(--white)
+  ) !important;
+}
+
+
+/* HERO TAGLINE */
+
+#home p:first-child {
+  color: var(--blue) !important;
+}
+
+
+/* HERO HEADING */
+
+#home h1 {
+  color: var(--dark-blue) !important;
+}
+
+
+/* "Next Adventure" */
+
+#home h1 span {
+  color: var(--blue) !important;
+}
+
+
+/* HERO DESCRIPTION */
+
+#home p {
+  color: var(--gray) !important;
+}
+
+
+/* =========================================
+   HERO BUTTONS
+   ========================================= */
+
+#home button {
+  transition: 0.3s;
+}
+
+
+/* START PLANNING */
+
+#home button:first-child {
+  background-color: var(--blue) !important;
+  color: var(--white) !important;
+  border: none !important;
+}
+
+#home button:first-child:hover {
+  background-color: var(--dark-blue) !important;
+  transform: translateY(-2px);
+}
+
+
+/* EXPLORE DESTINATIONS */
+
+#home button:nth-child(2) {
+  background-color: var(--white) !important;
+  color: var(--blue) !important;
+  border: 1px solid var(--blue) !important;
+}
+
+#home button:nth-child(2):hover {
+  background-color: var(--light-blue) !important;
+}
+
+
+/* =========================================
+   HERO IMAGE
+   ========================================= */
+
+#home img {
+  border-radius: 25px;
+}
+
+
+/* FLOATING CARD */
+
+#home div div {
+  color: var(--dark-blue);
+}
+
+
+/* =========================================
+   DESTINATIONS SECTION
+   ========================================= */
+
+#destinations {
+  background-color: var(--white) !important;
+}
+
+
+/* SECTION TAGLINE */
+
+#destinations p:first-child {
+  color: var(--blue) !important;
+}
+
+
+/* SECTION HEADING */
+
+#destinations h2 {
+  color: var(--dark-blue) !important;
+}
+
+
+/* SECTION DESCRIPTION */
+
+#destinations > div:first-child p:last-child {
+  color: var(--gray) !important;
+}
+
+
+/* =========================================
+   DESTINATION CARDS
+   ========================================= */
+
+#destinations > div:last-child > div {
+  background-color: var(--white) !important;
+  border: 1px solid var(--border) !important;
+  box-shadow: 0 8px 25px rgba(11, 61, 130, 0.08) !important;
+  transition: 0.3s;
+}
+
+#destinations > div:last-child > div:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(11, 61, 130, 0.15) !important;
+}
+
+
+/* DESTINATION IMAGE */
+
+#destinations img {
+  width: 100%;
+  object-fit: cover;
+}
+
+
+/* STATE */
+
+#destinations h3 {
+  color: var(--dark-blue) !important;
+}
+
+
+/* BUDGET + DURATION */
+
+#destinations p {
+  color: var(--gray) !important;
+}
+
+
+/* STATE NAME */
+
+#destinations p:first-child {
+  color: var(--blue) !important;
+  font-weight: bold;
+}
+
+
+/* =========================================
+   EXPLORE TRIP BUTTON
+   ========================================= */
+
+#destinations button {
+  background-color: var(--blue) !important;
+  color: var(--white) !important;
+  border: none !important;
+  transition: 0.3s;
+}
+
+#destinations button:hover {
+  background-color: var(--dark-blue) !important;
+  transform: translateY(-2px);
+}
+
+
+/* =========================================
+   ABOUT SECTION
+   ========================================= */
+
+#about {
+  background-color: var(--light-bg) !important;
+}
+
+
+/* ABOUT TAGLINE */
+
+#about p:first-child {
+  color: var(--blue) !important;
+}
+
+
+/* ABOUT HEADING */
+
+#about h2 {
+  color: var(--dark-blue) !important;
+}
+
+
+/* =========================================
+   FEATURE CARDS
+   ========================================= */
+
+#about > div:last-child > div {
+  background-color: var(--white) !important;
+  border: 1px solid var(--border);
+  box-shadow: 0 5px 20px rgba(11, 61, 130, 0.06);
+  transition: 0.3s;
+}
+
+#about > div:last-child > div:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(11, 61, 130, 0.12);
+}
+
+
+/* FEATURE ICONS */
+
+#about h3 {
+  color: var(--dark-blue);
+}
+
+
+/* FEATURE TEXT */
+
+#about div div p {
+  color: var(--gray);
+}
+
+
+/* =========================================
+   CALL TO ACTION
+   ========================================= */
+
+section:not(#home):not(#destinations):not(#about) {
+  background-color: var(--blue) !important;
+  color: var(--white) !important;
+}
+
+
+/* CTA HEADING */
+
+section:not(#home):not(#destinations):not(#about) h2 {
+  color: var(--white) !important;
+}
+
+
+/* CTA TEXT */
+
+section:not(#home):not(#destinations):not(#about) p {
+  color: var(--white) !important;
+}
+
+
+/* CTA BUTTON */
+
+section:not(#home):not(#destinations):not(#about) button {
+  background-color: var(--white) !important;
+  color: var(--blue) !important;
+  border: none !important;
+  transition: 0.3s;
+}
+
+section:not(#home):not(#destinations):not(#about) button:hover {
+  background-color: var(--dark-blue) !important;
+  color: var(--white) !important;
+}
+
+
+/* =========================================
+   FOOTER
+   ========================================= */
+
+footer {
+  background-color: var(--dark-blue) !important;
+  color: var(--white) !important;
+}
+
+footer h3,
+footer p,
+footer small {
+  color: var(--white) !important;
+}
+
+
+/* =========================================
+   RESPONSIVE DESIGN
+   ========================================= */
+
+@media (max-width: 900px) {
+
+  #home {
+    flex-direction: column !important;
+    padding: 50px 5% !important;
+  }
+
+  #home > div {
+    width: 100% !important;
+  }
+
+  #home h1 {
+    font-size: 45px !important;
+  }
+
+  #home img {
+    height: 350px !important;
+  }
+
+  #destinations > div:last-child {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+
+  #about > div:last-child {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
+
+
+@media (max-width: 600px) {
+
+  nav {
+    padding: 0 5% !important;
+  }
+
+  nav div:last-child {
+    gap: 10px !important;
+  }
+
+  nav a {
+    display: none;
+  }
+
+  #home h1 {
+    font-size: 38px !important;
+  }
+
+  #home p {
+    font-size: 16px !important;
+  }
+
+  #home > div:last-child {
+    height: 300px !important;
+  }
+
+  #home button {
+    padding: 12px 18px !important;
+  }
+
+  #destinations > div:last-child {
+    grid-template-columns: 1fr !important;
+  }
+
+  #about > div:last-child {
+    grid-template-columns: 1fr !important;
+  }
+}

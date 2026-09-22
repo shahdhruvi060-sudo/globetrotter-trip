@@ -1,0 +1,453 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* =========================
+   GLOBAL RESET
+========================= */
+
+* {
+  box-sizing: border-box;
+
+  margin: 0;
+
+  padding: 0;
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+body {
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  background: #f5f8fc;
+
+  color: #243b53;
+
+  line-height: 1.5;
+
+  min-width: 320px;
+}
+
+
+button,
+input,
+textarea,
+select {
+  font-family: inherit;
+}
+
+
+button {
+  cursor: pointer;
+}
+
+
+a {
+  color: inherit;
+}
+
+
+/* =========================
+   PAGE
+========================= */
+
+.page {
+  min-height: 100vh;
+
+  background:
+    linear-gradient(
+      180deg,
+      #f7faff 0%,
+      #f5f8fc 100%
+    );
+}
+
+
+/* =========================
+   CONTAINER
+========================= */
+
+.container {
+  width: 100%;
+
+  max-width: 1180px;
+
+  margin: 0 auto;
+
+  padding-left: 22px;
+
+  padding-right: 22px;
+}
+
+
+/* =========================
+   CARD
+========================= */
+
+.card {
+  background: #ffffff;
+
+  border: 1px solid #e5ebf2;
+
+  border-radius: 13px;
+
+  box-shadow:
+    0 5px 18px rgba(
+      30,
+      65,
+      100,
+      0.05
+    );
+}
+
+
+/* =========================
+   BUTTONS
+========================= */
+
+.btn {
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 6px;
+
+  border: none;
+
+  border-radius: 8px;
+
+  padding: 10px 15px;
+
+  background: #0b3d82;
+
+  color: #ffffff;
+
+  text-decoration: none;
+
+  font-size: 10px;
+
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+
+.btn:hover {
+  background: #082f66;
+
+  transform: translateY(-1px);
+
+  box-shadow:
+    0 4px 10px rgba(
+      11,
+      61,
+      130,
+      0.15
+    );
+}
+
+
+.btn:active {
+  transform: translateY(0);
+}
+
+
+.btn.secondary {
+  background: #ffffff;
+
+  color: #315574;
+
+  border: 1px solid #d7e1eb;
+
+  box-shadow: none;
+}
+
+
+.btn.secondary:hover {
+  background: #edf4fc;
+
+  color: #0b3d82;
+
+  border-color: #c8d9ea;
+}
+
+
+/* =========================
+   TEXT HELPERS
+========================= */
+
+.label {
+  display: inline-block;
+
+  color: #6f8298;
+
+  font-size: 9px;
+
+  font-weight: 800;
+
+  letter-spacing: 0.8px;
+
+  text-transform: uppercase;
+}
+
+
+.muted {
+  color: #8290a2;
+
+  font-size: 11px;
+}
+
+
+/* =========================
+   COMMON GRID
+========================= */
+
+.grid {
+  display: grid;
+
+  gap: 16px;
+}
+
+
+.grid-2 {
+  display: grid;
+
+  grid-template-columns:
+    repeat(2, 1fr);
+
+  gap: 16px;
+}
+
+
+.grid-3 {
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, 1fr);
+
+  gap: 16px;
+}
+
+
+.grid-4 {
+  display: grid;
+
+  grid-template-columns:
+    repeat(4, 1fr);
+
+  gap: 16px;
+}
+
+
+/* =========================
+   COMMON FORM
+========================= */
+
+.form-group {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 6px;
+
+  margin-bottom: 14px;
+}
+
+
+.form-group label {
+  color: #5f7288;
+
+  font-size: 10px;
+
+  font-weight: 700;
+}
+
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+
+  border: 1px solid #d7e1eb;
+
+  border-radius: 8px;
+
+  outline: none;
+
+  padding: 10px 11px;
+
+  background: #ffffff;
+
+  color: #344b64;
+
+  font-size: 11px;
+
+  transition: 0.2s;
+}
+
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: #0b3d82;
+
+  box-shadow:
+    0 0 0 3px rgba(
+      11,
+      61,
+      130,
+      0.06
+    );
+}
+
+
+.form-group textarea {
+  resize: vertical;
+
+  min-height: 90px;
+}
+
+
+/* =========================
+   STATUS
+========================= */
+
+.success {
+  padding: 10px 12px;
+
+  border-radius: 8px;
+
+  background: #eaf8f1;
+
+  color: #138b5b;
+
+  font-size: 10px;
+}
+
+
+.danger {
+  padding: 10px 12px;
+
+  border-radius: 8px;
+
+  background: #fff0f0;
+
+  color: #c54a4a;
+
+  font-size: 10px;
+}
+
+
+/* =========================
+   SCROLLBAR
+========================= */
+
+::-webkit-scrollbar {
+  width: 7px;
+
+  height: 7px;
+}
+
+
+::-webkit-scrollbar-track {
+  background: #f1f4f8;
+}
+
+
+::-webkit-scrollbar-thumb {
+  background: #c7d3df;
+
+  border-radius: 10px;
+}
+
+
+::-webkit-scrollbar-thumb:hover {
+  background: #9eafc1;
+}
+
+
+/* =========================
+   SELECTION
+========================= */
+
+::selection {
+  background: #dbeaf8;
+
+  color: #0b3d82;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+
+  .container {
+    padding-left: 18px;
+
+    padding-right: 18px;
+  }
+
+
+  .grid-4 {
+    grid-template-columns:
+      repeat(2, 1fr);
+  }
+
+
+  .grid-3 {
+    grid-template-columns:
+      repeat(2, 1fr);
+  }
+
+}
+
+
+@media (max-width: 600px) {
+
+  .container {
+    padding-left: 14px;
+
+    padding-right: 14px;
+  }
+
+
+  .grid-2,
+  .grid-3,
+  .grid-4 {
+    grid-template-columns: 1fr;
+  }
+
+
+  .btn {
+    padding: 10px 13px;
+
+    font-size: 10px;
+  }
+
+}
